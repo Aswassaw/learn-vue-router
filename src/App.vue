@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <nav>
+  <nav v-if="$route.name !== 'notFound'">
     <ul>
       <li>
         <RouterLink :to="{ name: 'homePage' }">Home</RouterLink>

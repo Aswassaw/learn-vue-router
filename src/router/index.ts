@@ -24,6 +24,11 @@ const router = createRouter({
       name: "movieDetailPage",
       component: () => import("../views/MovieDetailView.vue"),
     },
+    {
+      path: "/:randomPath(.*)*",
+      name: "notFound",
+      component: () => import("../views/NotFound.vue"),
+    },
   ],
 });
 
