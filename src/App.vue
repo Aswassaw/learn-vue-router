@@ -34,4 +34,9 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
+
+.router-link-active,
+.router-link-exact-active {
+  background-color: red;
+}
 </style>
